@@ -28,6 +28,11 @@ func main() {
 	value := 7
 
 	arr = append(arr[:index], append([]int{value}, arr[index:]...)...)
-	fmt.Printf("After inserting element at index 2, Array : %v\n", arr)
+	fmt.Printf("After inserting 7 at index 2, Array : %v\n", arr)
+
+	// Delete an element at index 2 .... time complexity : O(n), because it is a bit similar to actions performed during insertion
+	index = 2
+	arr = append(arr[:index], arr[index+1:]...)
+	fmt.Printf("After deleting element at index 2, Array : %v\n", arr)
 
 }
