@@ -19,4 +19,8 @@ func main() {
 		fmt.Printf("Element at index %d is %v\n", x, y)
 	}
 
+	// Modifying an element ... time complexity : O(1), since if you know the index, then you can modify the element
+	arr[2] = 6
+	fmt.Printf("After modifying element at index 2, Array : %v\n", arr)
+
 }
