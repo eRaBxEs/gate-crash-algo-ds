@@ -23,4 +23,11 @@ func main() {
 	arr[2] = 6
 	fmt.Printf("After modifying element at index 2, Array : %v\n", arr)
 
+	// Insert an element at index 2 .. time complexity : O(n), because we need to shift all the remaining elements to the right of the position we intend to insert
+	index := 2
+	value := 7
+
+	arr = append(arr[:index], append([]int{value}, arr[index:]...)...)
+	fmt.Printf("After inserting element at index 2, Array : %v\n", arr)
+
 }
