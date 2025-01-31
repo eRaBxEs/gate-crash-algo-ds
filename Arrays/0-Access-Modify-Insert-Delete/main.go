@@ -35,4 +35,5 @@ func main() {
 	arr = append(arr[:index], arr[index+1:]...)
 	fmt.Printf("After deleting element at index 2, Array : %v\n", arr)
 
+	fmt.Println(arr[len(arr)-1])
 }
