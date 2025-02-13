@@ -36,4 +36,22 @@ func main() {
 	fmt.Printf("After deleting element at index 2, Array : %v\n", arr)
 
 	fmt.Println(arr[len(arr)-1])
+
+	// IMPORTANT:
+	// create a slice of length 0 with the caapacity of arr
+	numList := make([]int, 0, len(arr))
+	//numList[0] = arr[0] // this is invalid
+	numList = append(numList, arr[0]) // append is what can only be used to add elements to an array of length 0
+	fmt.Println("The slice contains:", numList)
+
+	// Note that to add or change the value of the first element in numList, the actions below is not valid
+	// Lets say I want to change the elements of numList during a loop to the second element of arr
+	for i := 0; i < len(arr); i++ {
+		if i == 2 {
+			fmt.Println("length of numList:", len(numList))
+			fmt.Println("capacity of numList:", cap(numList))
+			numList[i-1] = arr[i] // Invalid operation
+		}
+	}
+
 }
