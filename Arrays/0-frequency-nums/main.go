@@ -7,6 +7,12 @@ from the smallest to the largest element of the given array/slice arr as an arra
 So if given an array/slice of [8, 3, 1, 2, 8, 3, 1, 1, 4, 8, 3]
 The function should return [3, 1, 3, 1, 3]. Where in arr element 1 occurs 3 times,
 2 occurs 1 time, 3 occurs 3 times, 4 occurs 1 time and 8 occurs 3 times.
+
+My Implementation in Go are below:
+https://go.dev/play/p/21BpVs_iLnQ
+https://go.dev/play/p/NOoBOTtKZR4
+https://go.dev/play/p/lw47dbhqQqJ
+https://go.dev/play/p/o2nA5A58hgw
 */
 package main
 
